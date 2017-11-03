@@ -3,6 +3,8 @@ spring:
     active:
     - dev 
 ---  
+server:
+  port: 8201
 spring: 
   profiles: dev
   application:
@@ -12,6 +14,8 @@ eureka:
     service-url:  #进行eureka注册中心的集群注册
       defaultZone: http://admin:admin@eureka-7001:8761/eureka,http://admin:admin@eureka-7003:7003/eureka   
 ---
+server:
+  port: 8202
 spring:
   proflies: beta    
   application:
