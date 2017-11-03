@@ -3,15 +3,14 @@ spring:
     active:
     - dev 
 ---  
- spring: 
+spring: 
   profiles: dev
   application:
     name: microclient-config-client
 eureka: 
   client:
     service-url:  #进行eureka注册中心的集群注册
-      defaultZone: http://admin:admin@eureka-7002:7002/eureka,http://admin:admin@eureka-7003:7003/eureka
-    
+      defaultZone: http://admin:admin@eureka-7001:8761/eureka,http://admin:admin@eureka-7003:7003/eureka   
 ---
 spring:
   proflies: beta    
