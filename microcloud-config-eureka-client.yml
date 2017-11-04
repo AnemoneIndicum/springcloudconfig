@@ -7,7 +7,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: microcloud-config-deveureka-client
+    name: microcloud-config-eureka-client
 server:
   port: 8761
 security:
@@ -32,7 +32,7 @@ eureka:
 spring:
   profiles: beta
   application:
-    name: microcloud-config-betaeureka-client
+    name: microcloud-config-eureka-client
 server:
   port: 8761
 security:
