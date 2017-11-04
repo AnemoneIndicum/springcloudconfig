@@ -1,10 +1,11 @@
+#git中 配置文件明细
 spring:
   profiles:
     active:
-    - dev-7001
+    - dev
 ---
 spring:
-  profiles: dev-7001
+  profiles: dev
   application:
     name: microcloud-config-deveureka-client
 server:
@@ -29,7 +30,7 @@ eureka:
     
 ---
 spring:
-  profiles: beta-7001
+  profiles: beta
   application:
     name: microcloud-config-betaeureka-client
 server:
