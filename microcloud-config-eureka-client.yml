@@ -1,0 +1,53 @@
+spring:
+  profiles:
+    active:
+    - dev-7001
+---
+spring:
+  profiles: dev-7001
+  application:
+    name: microcloud-config-deveureka-client
+server:
+  port: 8761
+security:
+  basic:
+    enabled: true   # 启用安全认证处理
+  user:
+    name: admin     # 用户名
+    password: admin  # 密码
+eureka: 
+  instance: # eureak实例定义
+    hostname: eureka-7001 # 定义Eureka实例所在的主机名称
+  client:
+    service-url:  #进行eureka注册中心的集群注册
+      defaultZone: http://admin:admin@eureka-7001:8761/eureka
+    register-with-eureka: false #是否将eureka自身作为应用注册到eureka注册中心
+    fetch-registry: false  #不通过eureka获取注册信息
+#server:
+    #enable-self-preservation: true # 设置为false表示关闭保护模式 建议不要关闭
+    #eviction-interval-timer-in-ms: 60000 # 设置清理的间隔时间，而后这个时间使用的是毫秒单位（默认是60秒）
+    
+---
+spring:
+  profiles: beta-7001
+  application:
+    name: microcloud-config-betaeureka-client
+server:
+  port: 8761
+security:
+  basic:
+    enabled: true   # 启用安全认证处理
+  user:
+    name: admin     # 用户名
+    password: admin  # 密码
+eureka: 
+  instance: # eureak实例定义
+    hostname: eureka-7001 # 定义Eureka实例所在的主机名称
+  client:
+    service-url:  #进行eureka注册中心的集群注册
+      defaultZone: http://admin:admin@eureka-7001:8761/eureka
+    register-with-eureka: false #是否将eureka自身作为应用注册到eureka注册中心
+    fetch-registry: false  #不通过eureka获取注册信息
+#server:
+    #enable-self-preservation: true # 设置为false表示关闭保护模式 建议不要关闭
+    #eviction-interval-timer-in-ms: 60000 # 设置清理的间隔时间，而后这个时间使用的是毫秒单位（默认是60秒）
