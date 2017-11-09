@@ -22,7 +22,7 @@ server:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:admin@eureka-config-7301:7301/eureka
+      defaultZone: http://admin:admin@eureka-7001:8761/eureka
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
@@ -62,7 +62,7 @@ server:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:admin@eureka-config-7301:7301/eureka
+      defaultZone: http://admin:admin@eureka-7001:8761/eureka
   instance:
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5 # 如果现在超过了5秒的间隔（默认是90秒）
@@ -86,7 +86,7 @@ spring:
     driver-class-name: org.gjt.mm.mysql.Driver      # 配置MySQL的驱动程序类
     url: jdbc:mysql://localhost:3306/springcloud1          # 数据库连接地址
     username: root                                  # 数据库用户名
-    password: '{cipher}AQCV3+Rp25WjZOqitt8MYp+48KscaeALJNplLIkLiCXyYWqIsJKqV36eCW0MhMPomzY84yHmJfDD9azGw9vUqudo5Fg9TWXH5WOTJO/6Q3psI+byJRktxqsSLoECRxamuqla+SK6Z/RDRvaDhjYORymhaJCdVan75G+upu9dmqULSWypUVHYQbvQOYv2aRALPPvmhCI5oyt382oVItcVroDkjQcrd03irlnwIHqBl21Zk/TzdTRsM27Fx3nP5SNAYwQJ9x0Aqizmy6xzSME0dFgtzFN2tB9uOlbmAfTEgUjCacuyD3GwT36f2Jk/eZcaDJp4s/JT7XpBWisNgv6D2evYyyBsQNiA7MMc2Tq2JxJNZ2qRPgwKXMGP182FfqmJKiw='                            # 数据库连接密码
+    password: 123456                            # 数据库连接密码
     dbcp2:                                          # 进行数据库连接池的配置
       min-idle: 5                                   # 数据库连接池的最小维持连接数    
       initial-size: 5                               # 初始化提供的连接数
