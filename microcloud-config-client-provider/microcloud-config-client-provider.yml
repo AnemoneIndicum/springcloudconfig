@@ -213,7 +213,7 @@ spring:
     # Redis 服务器端口
     password:
   application:
-    name: permisssion-provider-test-001
+    name: permisssion-provider-test
   profiles: test
 #eureka
 eureka:
