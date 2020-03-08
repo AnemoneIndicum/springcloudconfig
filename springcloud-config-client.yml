@@ -1,29 +1,2 @@
-#git 中测试文件
-spring:
-  profiles:
-    active:
-    - dev 
----  
-server:
-  port: 3366
-spring: 
-  profiles: dev
-  application:
-    name: microclient-config-client
-eureka: 
-  client:
-    service-url:  #进行eureka注册中心的集群注册
-      defaultZone:  http://127.0.0.1:7001/eureka
----
-server:
-  port: 3355
-spring:
-  proflies: beta    
-  application:
-    name: microclient-config-client
 config:
   info: aaaaaaaaaaa    
-eureka: 
-  client:
-    service-url:  #进行eureka注册中心的集群注册
-      defaultZone: http://127.0.0.1:7001/eureka
