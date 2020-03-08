@@ -14,6 +14,8 @@ eureka:
   client:
     service-url:  #进行eureka注册中心的集群注册
       defaultZone: http://admin:admin@eureka-config-7301:7301/eureka
+config:
+  info: aaaaaaaaaaa
 ---
 server:
   port: 8201
