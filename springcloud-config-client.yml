@@ -26,4 +26,4 @@ config:
 eureka: 
   client:
     service-url:  #进行eureka注册中心的集群注册
-      defaultZone: http://admin:admin@eureka-config-7301:7301/eureka
+      defaultZone: http://127.0.0.1:7001/eureka
